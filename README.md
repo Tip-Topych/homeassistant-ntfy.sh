@@ -1,5 +1,7 @@
 # ntfy.sh Home Assistant Notifications
 
+This is a fork, where i'm delete 'Bearer' from authorization, use in your configuration.yml token: Bearer xxxxxxxx or token: Basic xxxxxxxxxx
+
 The `ntfy.sh` notification platform enables you to easily send notifications with a custom prioirty and extra information via [ntfy.sh](https://ntfy.sh).
 
 ### Installation
