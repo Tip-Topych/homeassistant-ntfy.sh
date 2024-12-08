@@ -53,7 +53,7 @@ class HassAgentNotificationService(BaseNotificationService):
     def send_request(self, url, token, data):
         headers = {}
         if token != '':
-            headers = {'Authorization': 'Bearer ' + token}
+            headers = {'Authorization': token}
         return requests.post(url, headers=headers, json=data, timeout=10)
 
     async def async_send_message(self, message: str, **kwargs: Any):
